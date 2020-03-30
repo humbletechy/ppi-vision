@@ -33,7 +33,7 @@ class NewSurveyPresenter : BasePresenter<NewSurveyMVPView>() {
 
         try {
 
-            var response = get(url = url, headers = header, auth= BasicAuthorization(username, password))
+            var response = get(url = url, headers = header, auth= BasicAuthorization(username!!, password!!))
 
             if (response.statusCode == 200) {
 
